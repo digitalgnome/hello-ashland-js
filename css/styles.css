@@ -112,4 +112,8 @@ button:focus {
         font-size: 1.5em;
         line-height: 105%;
     }
+
+    #btnIn {
+        font-size: 1em;
+    }
 }
