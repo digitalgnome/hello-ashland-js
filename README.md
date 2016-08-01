@@ -1,4 +1,4 @@
-# _[Hello Ashland JavaScript Meetup]()_
+# _[Hello Ashland JavaScript Meetup](#)_
 
 #### This is the first code challenge for the Ashland, Oregon JavaScript Meetup.
 
