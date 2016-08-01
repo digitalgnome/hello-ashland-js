@@ -3,23 +3,28 @@ $(document).ready(function() {
     $("#btnIn").click(
         function() {
             if (opacity === false) {
-                $("#btnCtrl").velocity({
-                    'margin': '0 auto 0'
-                }, 2500);
+                $("#btnText").html("Greetings!");
+                $("#btnIn").animate({'margin-bottom': '1rem'}, 500);
+                $("#description").animate({'height': '35px'}, 1000);
                 $("#description").velocity({
-                    'font-size': '1.2em',
-                    'height': '1%',
-                    'margin': '5% 0 15%',
+                    'font-size': '180%',
+                    'height': '100%',
                     'padding': '10px',
-                    'opacity': '0.9',
-                    'text-align': 'left'
-                }, 1000);
-                $("#btnText").html('Hello Ashland JavaScript Meetup!');
+                    'opacity': '0.9'
+                }, 3000);
+                $("#description").animate({'margin-bottom': '0.5%'}, 500);
+                $('h1').html('Hello Ashland JavaScript Meetup!');
                 opacity = true;
             } else {
-                $("#btnCtrl").velocity("reverse");
+                $("#btnText").html("Click Me!");
                 $("#description").velocity("reverse");
-                $("#btnText").html('Ashland JavaScript Meetup');
+                $("#description").animate({
+                    'font-size': '0.5rem',
+                    'height': '0',
+                    'margin-bottom': '0'
+                }, 1000);
+                $("#btnIn").animate({'margin-bottom': '0'}, 4500);
+                $('h1').html('Ashland JavaScript Meetup');
                 opacity = false;
             }
         }
